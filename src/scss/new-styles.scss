@@ -1,3 +1,22 @@
+@import'base';
+
+$primary-color: purple
+
+$secondary-color;
+
+a:hover {
+  text-decoration: underline;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
 html, body {
     margin: 0;
     font-family: Arial;
@@ -45,7 +64,7 @@ html, body {
     background-color: #FFCFCF;
   }
   
-  .content ul {
+  .content > * ul {
     padding-left: 30px;
   }
   
@@ -79,4 +98,19 @@ html, body {
   .content a:hover {
     text-decoration: underline;
   }
+
+  // set the variable
+$dark-border: 3px solid black;
+$light-border: 1px dashed #eee;
+
+// use the variable
+.bigbox {
+  border: $dark-border;
+}
+
+blockquote {
+  // using the variable again
+  border-left: $dark-border;
+  padding-left: 20px;
+}
   
